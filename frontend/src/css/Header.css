@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+header {
+    @apply 
+    shadow-md
+    shadow-black
+    rounded-b-4xl
+    p-4
+    top-0
+    sm:p-0
+}
+
+.clicked-1 {
+    @apply
+    top-1/2
+    rotate-45
+}
+
+.clicked-2 {
+    @apply
+    opacity-0
+}
+
+.clicked-3 {
+    @apply
+    top-1/2
+    -rotate-45
+}
+
+.visible {
+    @apply
+    relative!
+    left-0!
+}
+
+#main-title {
+    @apply
+    bg-gradient-to-r from-amber-300 via-pink-500 to-blue-500
+    bg-cyan-400
+    bg-clip-text text-transparent
+    text-2xl font-bold text-shadow-2xs
+    transition-colors
+    sm:text-4xl
+}
+
+#header-nav {
+    @apply
+    mt-4 mb-4
+}
+
+.nav-links {
+    @apply
+    relative
+    text-shadow-md
+    text-shadow-black
+    text-cyan-400
+    transition-all
+}
+
+.nav-links:active {
+    @apply
+    text-cyan-800
+}
+
+.nav-links::after {
+    @apply
+    content-['']
+    absolute
+    w-0
+    h-1
+    bg-cyan-400
+    -bottom-1
+    left-0
+    rounded-sm
+    shadow-md
+    shadow-black
+    transition-all
+}
+
+@media (width >= 40rem) {
+    #main-title:hover {
+        @apply
+        bg-gradient-to-r from-amber-500 via-pink-700 to-blue-700
+        bg-cyan-600
+    }
+    .nav-links:hover {
+        @apply
+        text-cyan-600
+    }
+    .nav-links:hover::after {
+        @apply
+        w-full
+        bg-cyan-600
+    }   
+}
+
+.nav-links:active::after {
+    @apply
+    bg-cyan-800
+}
+
+#main-title:active {
+    @apply
+    bg-gradient-to-r from-amber-600 via-pink-800 to-blue-800
+    bg-cyan-800
+}

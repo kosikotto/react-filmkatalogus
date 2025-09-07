@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scrollbar-color: hsl(180, 90%, 45%) hsl(180, 100%, 8%);
+}
+
+html, body {
+  @apply 
+  w-full
+  h-full
+  bg-cyan-950
+  text-shadow-sm
+  text-shadow-black
+  font-serif
+} 
+
+body {
+  @apply
+  text-white
+  flex
+  flex-col
+}
+
+#root {
+  @apply
+  flex
+  flex-col
+  flex-1
+  justify-between
+  bg-linear-to-r from-cyan-950 to-cyan-800 
+}
+
+#search-div {
+  @apply
+  mt-10
+  ml-auto
+  mr-auto
+}
+
+#card-wrapper {
+  @apply
+  mt-10
+  mb-10
+}
+
+#find-button, #reset-button {
+    @apply
+    rounded-md
+    p-2
+    font-bold
+    shadow-black
+    shadow-md
+    transition-colors
+}
+
+#find-button:hover, #reset-button:hover {
+    @apply
+    cursor-pointer
+    
+}
+
+h1 {
+  @apply text-3xl font-bold;
+}
+
+h2 {
+  @apply text-xl font-bold;
+}

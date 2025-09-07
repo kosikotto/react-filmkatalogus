@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+#card-info {
+    @apply
+    p-2
+}
+
+#kedvencek, #lattam {
+    @apply
+    p-1
+    w-10
+    h-10
+    bg-conic from-cyan-700 via-cyan-500 to-cyan-700
+    bg-cyan-700
+    opacity-90
+    shadow-black
+    shadow-md
+    transition-colors
+}
+
+@media (width >= 40rem) {
+    #kedvencek:hover, #lattam:hover {
+    @apply
+    bg-conic from-cyan-900 via-cyan-700 to-cyan-900
+    bg-cyan-900
+    }
+}
+
+#kedvencek:active, #lattam:active {
+    @apply
+    bg-conic from-cyan-950 via-cyan-800 to-cyan-950
+    bg-cyan-950
+}
+
+#search-div {
+    @apply
+    justify-center
+}
+
+#search-box {
+    @apply
+    p-1
+    shadow-black
+    shadow-md
+}
