@@ -20,7 +20,7 @@ Hivatalos dokumentáció a Node.js és az npm-hez:
 1. lépés: Lépj be a "frontend" könyvtárba:
 2. lépés: Telepítsd a szükséges függőségeket:
 
-       npm run dev
+       npm install
    
 4. lépés: Indítsd el a fejlesztői szervert:
 
