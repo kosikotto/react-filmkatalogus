@@ -1,31 +1,36 @@
-🎬 React Filmkatalógus Projekt
+# 🎬 React Film Catalog Project
 
-Ez egy modern webfejlesztési projekt, amely a React, Tailwind CSS és TypeScript ökoszisztéma alapjainak elsajátítására készült. A fejlesztés során a cél egy jól strukturált, reszponzív és az iparági gyakorlatoknak megfelelő alkalmazás létrehozása volt.
+This is a modern web development project designed to master the fundamentals of the React, Tailwind CSS, and TypeScript ecosystem. During development, the goal was to create a well-structured, responsive application that follows industry best practices.
 
-***
+---
 
-💡 Technológiai megközelítés
+## 💡 Technical Approach
 
-Bár a projekt bizonyos részei még hagyományos action listenereket használnak a modernebb hook-alapú megközelítés helyett, ez a döntés tudatos volt: segített elmélyíteni a tudást a Virtual DOM működéséről és a React alapvető filozófiájáról.
+Although certain parts of the project still use traditional action listeners instead of a more modern hook-based approach, this was a conscious decision: it helped deepen my understanding of how the Virtual DOM works and the core philosophy of React.
 
-***
+---
 
-🛠️ Telepítés és futtatás
+## 🛠️ Installation and Running
 
-A projekt futtatásához elengedhetetlen, hogy a gépeden telepítve legyen a Node.js és az npm (Node Package Manager).
-Hivatalos dokumentáció a Node.js és az npm-hez: 
+To run the project, it is essential to have Node.js and npm (Node Package Manager) installed on your machine. 
+Official documentation for Node.js and npm:
 
     https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
-1. lépés: Lépj be a "frontend" könyvtárba:
-2. lépés: Telepítsd a szükséges függőségeket:
+**Step 1: Navigate to the `frontend` directory**
+Open your terminal and enter the project's frontend folder.
 
-       npm install
-   
-4. lépés: Indítsd el a fejlesztői szervert:
+**Step 2: Install the required dependencies**
+Run the following command to download all necessary packages:
 
-        npm run dev
-   
-7. lépés: Nyisd meg böngészőben:
+    npm install
 
-       http://localhost:5173/filmkatalogus/
+**Step 3: Start the development server**
+Launch the application in development mode:
+
+    npm run dev
+
+**Step 4: Open in your browser**
+Once the server is running, the application will be accessible at the following address:
+
+    http://localhost:5173/filmkatalogus/
